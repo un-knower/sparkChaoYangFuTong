@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/aldwxstat_etlNew.iml" filepath="$PROJECT_DIR$/.idea/aldwxstat_etlNew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etl/etl.iml" filepath="$PROJECT_DIR$/etl/etl.iml" />
+    </modules>
+  </component>
+</project>

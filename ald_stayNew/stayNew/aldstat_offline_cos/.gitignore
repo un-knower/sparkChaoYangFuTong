@@ -1,0 +1,9 @@
+*.jar
+.DS_Store
+target/
+spark-warehouse/
+*.sh
+idea/
+.idea
+*.iml
+src/main/scala/aldwxutils/DBConf.scala
