@@ -3,7 +3,7 @@ package com
 //==========================================================
 /*
 *gcs:
-*这个程序是目前的
+*这个程序是目前的etl的处理的程序
 */
 import aldwxutil.{TimeUtil, regex_rule}
 import com.alibaba.fastjson.{JSON, JSONObject}
@@ -67,7 +67,7 @@ object ETLHourAll {
   */
   def jsonEtlHour(spark: SparkSession, aldTimeUtil: TimeUtil, today: String, hour: String): Unit = {
 
-    //==========================================================2
+    //==========================================================1
     /*
     *gcs:
     *读取hdfs当中的文件的路径。创建fileSystem对象。
@@ -319,7 +319,7 @@ object ETLHourAll {
               //==========================================================9
                 /*
                 *gcs:
-                *对于st字段的分析。将st字段由String类型转换为long类型的数据
+                *对于st字段的分析。首次查看st字段是否可以转换为long类型，其实这里应该将st字段由String类型转换为long类型的数据
                 */
               else if (js.containsKey("st") && js.get("st") != null && !js.get("st").equals("")) {
                 val stvale = js.get("st").toString
